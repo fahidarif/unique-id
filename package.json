@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Amazingly unique ids which are short and Perfect for url shorteners, MongoDB and Redis ids, and any other id users might see.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "fahidarif@gmail.com",
   "license": "ISC",
   "dependencies": {
@@ -22,5 +19,16 @@
   "bugs": {
     "url": "https://github.com/fahidarif/unique-id/issues"
   },
-  "homepage": "https://github.com/fahidarif/unique-id#readme"
+  "homepage": "https://github.com/fahidarif/unique-id#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "id",
+    "unique",
+    "unique-id",
+    "shortid",
+    "youtube-like",
+    "base64"
+  ]
 }
