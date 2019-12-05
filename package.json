@@ -1,0 +1,26 @@
+{
+  "name": "@unique/id",
+  "version": "1.0.0",
+  "description": "Amazingly unique ids which are short and Perfect for url shorteners, MongoDB and Redis ids, and any other id users might see.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fahidarif@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "big-integer": "^1.6.48"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fahidarif/unique-id.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fahidarif/unique-id/issues"
+  },
+  "homepage": "https://github.com/fahidarif/unique-id#readme"
+}
