@@ -50,8 +50,3 @@ users.insert({
 
 ---------------------------------------
 
-#### `shortid.characters(string)`
-
-__Default:__ `'-ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz_'`
-
-__Returns__ new alphabet as a `string`
