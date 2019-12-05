@@ -1,5 +1,5 @@
 {
-  "name": "@unique/id",
+  "name": "unique-identity",
   "version": "1.0.1",
   "description": "Amazingly unique ids which are short and Perfect for url shorteners, MongoDB and Redis ids, and any other id users might see.",
   "main": "index.js",

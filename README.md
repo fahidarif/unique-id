@@ -1,10 +1,10 @@
-## @unique/id 
+## unique-identity 
 
 > Amazingly unique ids which are short and Perfect for url shorteners, MongoDB and Redis ids, and any other id users might see..
 ### Usage
 
 ```js
-const id = require('@unique-id');
+const id = require('unique-identity');
 
 console.log(id.get());
 ```
@@ -33,7 +33,7 @@ cwefeWRhpRV
 ### API
 
 ```js
-const id = require('@unique-id');
+const id = require('unique-identity');
 ```
 
 ---------------------------------------
