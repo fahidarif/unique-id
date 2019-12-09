@@ -1,6 +1,6 @@
 {
   "name": "unique-identity",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Amazingly unique ids which are short and Perfect for url shorteners, MongoDB and Redis ids, and any other id users might see.",
   "main": "index.js",
   "author": "fahidarif@gmail.com",
