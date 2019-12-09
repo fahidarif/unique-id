@@ -50,3 +50,15 @@ users.insert({
 
 ---------------------------------------
 
+> You can also set your custom 64 unique characters then unique id will be generated accordingly.
+### Example
+
+```js
+const id = require('unique-identity');
+
+let characters='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_';
+id.characters(characters);
+
+console.log(id.characters(characters));
+// { status : true }
+```
