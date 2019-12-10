@@ -7,6 +7,9 @@
 const id = require('unique-identity');
 
 console.log(id.get());
+// cwefeWRhpRV
+// 23TplPdS2-_
+// 46Juzcyxd3C
 ```
 
 Mongoose Unique Id
@@ -16,18 +19,6 @@ _id: {
   'default': id.get()
 },
 ```
-
-
-
-### Example
-
-```bash
-~/projects/shortid ❯ node examples/examples.js
-cwefeWRhpRV
-23TplPdS2-_
-46Juzcyxd3C
-```
-
 
 
 ### API
@@ -61,4 +52,10 @@ id.characters(characters);
 
 console.log(id.characters(characters));
 // { status : true }
+
+console.log(id.characters('duplicate characters of string'));
+// { message: 'duplicate characters found!', status: false }
+
+console.log(id.characters('wrong length of string'));
+// { message: 'need 64 unique characters!', status: false }
 ```
