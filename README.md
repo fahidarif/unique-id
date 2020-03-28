@@ -1,15 +1,22 @@
 ## unique-identity 
 
 > Amazingly unique ids which are short and Perfect for url shorteners, MongoDB and Redis ids, and any other id users might see..
+
+
+## Features
+- Generates unique id's on multiple processes and machines even if called at the same time.
+- With the Process ID, MAC Address and the combinations of current Time the ID's are unique even if called at the same time from multiple machines and processes.
+
 ### Usage
 
 ```js
 const id = require('unique-identity');
 
 console.log(id.get());
-// cwefeWRhpRV
-// 23TplPdS2-_
-// 46Juzcyxd3C
+// De3MOQxCZAdHpvx3pG
+// Bukc9IfvI8mh10PD5G
+// D1kxsCOHcwrrfEDGpG
+// VzS-0jSpkgQr7AD9G
 ```
 
 Mongoose Unique Id
