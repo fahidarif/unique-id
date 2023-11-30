@@ -1,7 +1,7 @@
 {
   "name": "unique-identity",
-  "version": "2.1.3",
-  "description": "Amazingly unique ids which are short and Perfect for url shorteners, MongoDB and Redis ids, and any other id users might see.",
+  "version": "2.2.3",
+  "description": "Amazingly unique ids which are short and Perfect for Url Shorteners, Product SKUs, Socket Ids, Data Base Ids, SQL, MongoDB, PostGres, MySQL, MSSQL, Redis ids, and any other id users might see...",
   "main": "index.js",
   "author": "fahidarif@gmail.com",
   "license": "ISC",
@@ -29,6 +29,16 @@
     "unique-id",
     "shortid",
     "youtube-like",
-    "base64"
+    "base64",
+    "Product SKUs",
+    "Socket Ids",
+    "Data Base Ids",
+    "SQL",
+    "NOSQL",
+    "MongoDB",
+    "PostGres",
+    "UUID",
+    "MySQL",
+    "Redis ids"
   ]
 }
