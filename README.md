@@ -1,6 +1,6 @@
 ## unique-identity 
 
-### Amazingly unique ids which are short and Perfect for Url Shorteners, Product SKUs, Socket Ids, Data Base Ids, SQL, MongoDB, PostGres, MySQL, MSSQL, Redis ids, and any other id users might see...
+### Amazingly unique ids which are short and Perfect for Url Shorteners, Product SKUs, Socket Ids, Data Base Ids, SQL, MongoDB, PostGres, MySQL, MSSQL, Redis ids, Front-End Temp IDs and any other id users might see...
 
 
 ## Features
@@ -8,11 +8,33 @@
 - With the Process ID, MAC Address and the combinations of current Time the ID's are unique even if called at the same time from multiple machines and processes.
 - Set Pre-Fix in unique IDs.
 - Set Post-Fix in unique IDs.
+- ### Now With Typescript Support 🥳
+- Now any typescript based Environment can easily use unique-identity 🤩
 
 ### Usage
 
-```js
+```ts
+//JavaScript
 const id = require('unique-identity');
+//Or
+const { characters, get, setPostfix, setPrefix } = require('unique-identity');
+
+
+console.log(id.get());
+// De3MOQxCZAdHpvx3pG
+// Bukc9IfvI8mh10PD5G
+// D1kxsCOHcwrrfEDGpG
+// VzS-0jSpkgQr7AD9G
+```
+
+
+```ts
+//TypeScript
+import { characters, get, setPostfix, setPrefix } from 'unique-identity';
+//Or
+import * as id from 'unique-identity';
+//Or
+import id from 'unique-identity';
 
 console.log(id.get());
 // De3MOQxCZAdHpvx3pG
@@ -33,7 +55,17 @@ _id: {
 ### API
 
 ```js
+//JavaScript
 const id = require('unique-identity');
+//Or
+const { characters, get, setPostfix, setPrefix } = require('unique-identity');
+
+//TypeScript
+import { characters, get, setPostfix, setPrefix } from 'unique-identity';
+//Or
+import * as id from 'unique-identity';
+//Or
+import id from 'unique-identity';
 ```
 
 ---------------------------------------
@@ -54,7 +86,18 @@ users.insert({
 ### Example
 
 ```js
+
+//JavaScript
 const id = require('unique-identity');
+//Or
+const { characters, get, setPostfix, setPrefix } = require('unique-identity');
+
+//TypeScript
+import { characters, get, setPostfix, setPrefix } from 'unique-identity';
+//Or
+import * as id from 'unique-identity';
+//Or
+import id from 'unique-identity';
 
 let characters='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_';
 id.characters(characters);
@@ -75,7 +118,17 @@ console.log(id.characters('wrong length of string'));
 ### Example
 
 ```js
+//JavaScript
 const id = require('unique-identity');
+//Or
+const { characters, get, setPostfix, setPrefix } = require('unique-identity');
+
+//TypeScript
+import { characters, get, setPostfix, setPrefix } from 'unique-identity';
+//Or
+import * as id from 'unique-identity';
+//Or
+import id from 'unique-identity';
 
 // To Set Pre-Fix
 
