@@ -17,7 +17,7 @@
 //JavaScript
 const id = require('unique-identity');
 //Or
-const { characters, get, setPostfix, setPrefix } = require('unique-identity');
+const { characters, get } = require('unique-identity');
 
 
 console.log(id.get());
@@ -30,7 +30,7 @@ console.log(id.get());
 
 ```ts
 //TypeScript
-import { characters, get, setPostfix, setPrefix } from 'unique-identity';
+import { characters, get } from 'unique-identity';
 //Or
 import * as id from 'unique-identity';
 //Or
@@ -58,10 +58,10 @@ _id: {
 //JavaScript
 const id = require('unique-identity');
 //Or
-const { characters, get, setPostfix, setPrefix } = require('unique-identity');
+const { characters, get } = require('unique-identity');
 
 //TypeScript
-import { characters, get, setPostfix, setPrefix } from 'unique-identity';
+import { characters, get } from 'unique-identity';
 //Or
 import * as id from 'unique-identity';
 //Or
@@ -90,10 +90,10 @@ users.insert({
 //JavaScript
 const id = require('unique-identity');
 //Or
-const { characters, get, setPostfix, setPrefix } = require('unique-identity');
+const { characters, get } = require('unique-identity');
 
 //TypeScript
-import { characters, get, setPostfix, setPrefix } from 'unique-identity';
+import { characters, get } from 'unique-identity';
 //Or
 import * as id from 'unique-identity';
 //Or
@@ -121,41 +121,14 @@ console.log(id.characters('wrong length of string'));
 //JavaScript
 const id = require('unique-identity');
 //Or
-const { characters, get, setPostfix, setPrefix } = require('unique-identity');
+const { characters, get } = require('unique-identity');
 
 //TypeScript
-import { characters, get, setPostfix, setPrefix } from 'unique-identity';
+import { characters, get } from 'unique-identity';
 //Or
 import * as id from 'unique-identity';
 //Or
 import id from 'unique-identity';
-
-// To Set Pre-Fix
-
-id.setPrefix(inputString);
-
-console.log(id.setPrefix(inputString));
-// { status : true }
-
-console.log(id.setPrefix(/*invalid type input*/));
-// { message: 'Invalid input type, Required string.', status: false }
-
-console.log(id.setPrefix(/*input string length more than 50 chars*/));
-// { message: 'Max chars limit is 50.', status: false }
-
-
-// To Set Post-Fix
-
-id.setPostfix(inputString);
-
-console.log(id.setPostfix(inputString));
-// { status : true }
-
-console.log(id.setPostfix(/*invalid type input*/));
-// { message: 'Invalid input type, Required string.', status: false }
-
-console.log(id.setPostfix(/*input string length more than 50 chars*/));
-// { message: 'Max chars limit is 50.', status: false }
 
 ```
 
@@ -165,8 +138,7 @@ console.log(id.setPostfix(/*input string length more than 50 chars*/));
 
 //Pre-Fix
 
-id.setPrefix('SKU_');
-console.log(id.get());
+console.log(id.get('SKU_'));
 // SKU_De3MOQxCZAdHpvx3pG
 // SKU_Bukc9IfvI8mh10PD5G
 // SKU_D1kxsCOHcwrrfEDGpG
@@ -174,25 +146,19 @@ console.log(id.get());
 
 //Post-Fix
 
-id.setPostfix('_postFix');
-console.log(id.get());
+console.log(id.get('', '_postFix'));
 // De3MOQxCZAdHpvx3pG_postFix
 // Bukc9IfvI8mh10PD5G_postFix
 // D1kxsCOHcwrrfEDGpG_postFix
 
 
 //For Both
-id.setPrefix('SKU_');
-id.setPostfix('_postFix');
 
-console.log(id.get());
+console.log(id.get('SKU_', '_postFix'));
 // SKU_De3MOQxCZAdHpvx3pG_postFix
 // SKU_Bukc9IfvI8mh10PD5G_postFix
 // SKU_D1kxsCOHcwrrfEDGpG_postFix
 
 //To Unset the Pre-Fix or Post-Fix
-
-id.setPrefix('');// it will unset prefix
-id.setPostfix('');// it will unset postfix
 
 ```
