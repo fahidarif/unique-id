@@ -1,4 +1,6 @@
 /**
+ * @param {string} prefix Optional prefix to add with generated ID.
+ * @param {string} postfix Optional postfix to add with generated ID.
  * @return {string} Returns The Unique ID.
  */
 export function get(prefix?: string, suffix?: string): string;

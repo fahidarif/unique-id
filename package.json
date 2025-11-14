@@ -1,6 +1,6 @@
 {
   "name": "unique-identity",
-  "version": "2.4.5",
+  "version": "2.4.7",
   "description": "Amazingly unique ids which are short and Perfect for Url Shorteners, Product SKUs, Socket Ids, Data Base Ids, SQL, MongoDB, PostGres, MySQL, MSSQL, Redis ids, and any other id users might see...",
   "main": "index.js",
   "types": "index.d.ts",
